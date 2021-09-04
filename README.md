@@ -17,5 +17,6 @@ Build, Run and Test
     (you have to see 6)
     > superport:baz(3).
     (you have to see 0)
+    > superport:stop().
     escape from erl shell with ctrl-c
     

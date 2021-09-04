@@ -2,8 +2,8 @@
 
 #include <stdio.h>
 #include <unistd.h>
+#include "erl_comm.h"
 
-typedef unsigned char byte;
 
 int read_exact(byte *buf, int len)
 {

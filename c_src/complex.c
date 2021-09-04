@@ -1,4 +1,5 @@
 /* complex.c */
+#include "complex.h"
 
 int foo(int x) {
   return x+1;

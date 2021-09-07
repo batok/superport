@@ -12,11 +12,18 @@ Build, Run and Test
     $ rebar3 shell
     > superport:start("priv/superport").
     > superport:foo(3).
-    (you have to see 4)
+    (you should see 4)
+    
     > superport:bar(3).
-    (you have to see 6)
+    (you should see 6)
+    
     > superport:baz(3).
-    (you have to see 0)
+    (you should see 0)
+    
+    > superport:sum(3,2).
+    (you should see 5)
+
     > superport:stop().
+    
     escape from erl shell with ctrl-c
     

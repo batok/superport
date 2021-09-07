@@ -19,6 +19,8 @@ int main() {
       res = bar(arg);
     } else if (fn == 3) {
       res = baz(arg);
+    } else if (fn == 4) {
+      res = sum(arg, buf[2]);
     }
 
     buf[0] = res;

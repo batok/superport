@@ -12,3 +12,7 @@ int bar(int y) {
 int baz(int y) {
   return y-3;
 }
+
+int sum(int x, int y) {
+  return x + y;
+}

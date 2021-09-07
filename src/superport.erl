@@ -1,7 +1,7 @@
 -module(superport).
 
 -export([start/1, stop/0, init/1]).
--export([foo/1, bar/1, baz/1]).
+-export([foo/1, bar/1, baz/1, sum/2]).
 
 start(ExtPrg) ->
     spawn(?MODULE, init, [ExtPrg]).
@@ -14,6 +14,9 @@ bar(Y) ->
     call_port({bar, Y}).
 baz(Y) ->
     call_port({baz, Y}).
+sum(X,Y) ->
+    call_port({sum, X, Y}).
+
 
 call_port(Msg) ->
     superport ! {call, self(), Msg},
@@ -49,6 +52,7 @@ loop(Port) ->
 
 encode({foo, X}) -> [1, X];
 encode({bar, Y}) -> [2, Y];
-encode({baz, Y}) -> [3, Y].
+encode({baz, Y}) -> [3, Y];
+encode({sum, X, Y}) -> [4, X, Y].
 
 decode([Int]) -> Int.

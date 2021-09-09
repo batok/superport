@@ -6,9 +6,6 @@ An erlang port example
 Build, Run and Test
 -------------------
     make sure rebar3 is in you path and ...
-    $ cd c_src
-    $ make
-    $ cd ..
     $ rebar3 shell
     > superport:start("priv/superport").
     > superport:foo(3).
@@ -25,5 +22,5 @@ Build, Run and Test
 
     > superport:stop().
     
-    escape from erl shell with ctrl-c
+    exit from rebar3 shell with ctrl-c
     

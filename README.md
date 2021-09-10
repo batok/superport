@@ -3,7 +3,7 @@ superport
 
 An erlang port example
 
-Build, Run and Test
+Build, run and test
 -------------------
     make sure rebar3 is in you path and ...
     $ rebar3 shell

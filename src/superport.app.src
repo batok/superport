@@ -1,5 +1,5 @@
 {application, superport,
- [{description, "An OTP library"},
+ [{description, "An erlang port basic example"},
   {vsn, "0.1.0"},
   {registered, []},
   {applications,

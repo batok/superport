@@ -41,8 +41,8 @@ Build and run
     7> superport:stop().
     (Let's try the zig version)
 
-    8> Path = filename:join([code:priv_dir(superport), "eport"]),
-    9> superport:start(Path).
+    8> Path2 = filename:join([code:priv_dir(superport), "eport"]),
+    9> superport:start(Path2).
     (you should see the port displayed)
     10> superport:foo(3).
     (you should see 4)

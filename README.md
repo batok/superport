@@ -13,7 +13,7 @@ Build and run
     (run the tests of zig code [optional])
     $ zig src/main.zig
     (build the executable)
-    $ zig build
+    $ zig build -Drelease-fast=true 
     $ cd ..
     $ cd priv
     $ cp ../z_src/zig-out/bin/eport .

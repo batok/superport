@@ -3,6 +3,10 @@ superport
 
 An erlang port example
 
+Note
+----
+Don't use the zig version for the moment.  I discovered that never stops.  Will remove this note when is ready to be used.  Just use the C version.
+
 Build and run 
 -------------
     This project contains an erlang port developed with zig language, that does the same as the C version.
